@@ -5,16 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="app.js" defer></script>
 </head>
 <body>
-    <form action="api.php" method="post" enctype="multipart/form-data"> <!-- para que funciones debe ser posto para enviar y guardar imagen -->
+    <form id="myform"> <!-- para que funciones debe ser posto para enviar y guardar imagen -->
         <input type="text" name="nombre"><br>
         <input type="text" name="apellido"><br>
         <input type="number" name="edad"><br>
         <input type="checkbox" name="pasatiempos[]" value="Programar"><label>Programar</label><br>
         <input type="checkbox" name="pasatiempos[]" value="Musica"><label>Musica</label><br>
-        <input type="file" name="archivo" ><br>
+        <!-- <input type="file" name="archivo" ><br> -->
         <input type="submit" value=" enviar">
     </form> 
+    <pre>
+        array(16) {
+            ["Host"]=>
+            string(9) "localhost"
+            ["Connection"]=>
+            string(10) "keep-alive"
+            ["Content-Length"]=>
+            string(2) "37"
+            ["sec-ch-ua"]=>
+            string(65) ""Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24""
+            ["sec-ch-ua-platform"]=>
+            string(9) ""Windows""
+            ["sec-ch-ua-mobile"]=>
+            string(2) "?0"
+            ["User-Agent"]=>
+            string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
+            ["content-type"]=>
+            string(16) "application-json"
+            ["Accept"]=>
+            string(3) "*/*"
+            ["Origin"]=>
+            string(16) "http://localhost"
+            ["Sec-Fetch-Site"]=>
+            string(11) "same-origin"
+            ["Sec-Fetch-Mode"]=>
+            string(4) "cors"
+            ["Sec-Fetch-Dest"]=>
+            string(5) "empty"
+            ["Referer"]=>
+            string(40) "http://localhost/EnvioDataPHP/index.html"
+            ["Accept-Encoding"]=>
+            string(17) "gzip, deflate, br"
+            ["Accept-Language"]=>
+            string(14) "es-ES,es;q=0.9"
+          }
+    </pre>
 </body>
 </html>

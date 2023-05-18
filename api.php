@@ -1,4 +1,7 @@
 <?php
-     move_uploaded_file($_FILES["archivo"]["tmp_name"], $_FILES["archivo"]["name"]);
-     echo '<a href="index.html">Atras</a>'
+     header("Content-Type: application/json");//
+     $_DATA = json_decode(file_get_contents("php://input"), true);
+     $_METHOD = $_SERVER["REQUEST_METHOD"];
+     $_HEADERS = apache_request_headers();
+     var_dump($_HEADERS);
 ?>
