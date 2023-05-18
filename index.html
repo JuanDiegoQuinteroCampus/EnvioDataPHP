@@ -7,12 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="api.php" method="GET">
+    <form action="api.php" method="post" enctype="multipart/form-data"> <!-- para que funciones debe ser posto para enviar y guardar imagen -->
         <input type="text" name="nombre"><br>
         <input type="text" name="apellido"><br>
         <input type="number" name="edad"><br>
         <input type="checkbox" name="pasatiempos[]" value="Programar"><label>Programar</label><br>
         <input type="checkbox" name="pasatiempos[]" value="Musica"><label>Musica</label><br>
+        <input type="file" name="archivo" ><br>
         <input type="submit" value=" enviar">
     </form> 
 </body>
